@@ -1,8 +1,9 @@
 title: Retroflowing Portfolio
 email: jeanberrios53@gmail.com
-description: >- 
-  Lead Line Cook by day | Cyber Analyst by night. Swapping sauté pans 
+description: >-
+  Lead Line Cook by day | Cyber Analyst by night. Swapping saute pans 
   for Wazuh alerts. Applying the "Mise en Place" philosophy to Information Security.
 baseurl: "" 
 url: "https://Retroflowing.github.io"
 theme: minima
+future: true
