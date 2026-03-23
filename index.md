@@ -3,4 +3,7 @@ layout: home
 title: Home
 ---
 
-Welcome to my portfolio! Documenting my transition from **Lead Line Cook** at Via Italian Table to **Cybersecurity Professional**.
+# Welcome to my Portfolio
+Transitioning from **Lead Line Cook** to **Cybersecurity professional**.
+
+## Daily Cyber Intel & Labs
