@@ -1,0 +1,38 @@
+name: Daily Cyber News Agent
+on:
+  workflow_dispatch: # Allows you to run it manually
+  schedule:
+    - cron: '0 0 * * *' # Runs every night at midnight
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Ask Gemini for News
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          # This script tells Gemini to write a Jekyll-formatted post
+          curl -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=$GEMINI_API_KEY" \
+          -H 'Content-Type: application/json' \
+          -d '{
+            "contents": [{
+              "parts":[{
+                "text": "Write a short Jekyll blog post about today top 3 cybersecurity news stories. Include Front Matter with layout: post, title, and today date. Format in markdown."
+              }]
+            }]
+          }' > response.json
+          
+          # Extract the text and save it as a new post
+          python3 -c "import json, sys; print(json.load(open('response.json'))['candidates'][0]['content']['parts'][0]['text'])" > _posts/$(date +%Y-%m-%d)-daily-intel.md
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "CyberNewsBot"
+          git config --global user.email "bot@retroflowing.com"
+          git add _posts/*.md
+          git commit -m "Automated Daily Threat Intel"
+          git push
