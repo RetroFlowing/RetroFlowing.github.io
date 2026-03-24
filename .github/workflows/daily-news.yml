@@ -10,25 +10,29 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-
       - name: Ask Gemini for News
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          # This script tells Gemini to write a Jekyll-formatted post
+          # 1. Fetch the news
           curl -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=$GEMINI_API_KEY" \
           -H 'Content-Type: application/json' \
           -d '{
             "contents": [{
               "parts":[{
-                "text": "Write a short Jekyll blog post about today top 3 cybersecurity news stories. Include Front Matter with layout: post, title, and today date. Format in markdown."
+                "text": "Write a professional Jekyll blog post about today top 3 cybersecurity news stories. Focus on impact and mitigation. Include Front Matter with layout: post, title, and date. Output ONLY markdown."
               }]
             }]
           }' > response.json
-          
-          # Extract the text and save it as a new post
-          python3 -c "import json, sys; print(json.load(open('response.json'))['candidates'][0]['content']['parts'][0]['text'])" > _posts/$(date +%Y-%m-%d)-daily-intel.md
 
+          # 2. Check for errors and extract text
+          if grep -q "error" response.json; then
+            echo "API Error Detected:"
+            cat response.json
+            exit 1
+          else
+            python3 -c "import json; r = json.load(open('response.json')); print(r['candidates'][0]['content']['parts'][0]['text'])" > _posts/$(date +%Y-%m-%d)-daily-intel.md
+          fi
       - name: Commit and Push
         run: |
           git config --global user.name "CyberNewsBot"
