@@ -14,3 +14,5 @@ header_pages:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+timezone: America/New_York
+future: true
