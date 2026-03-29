@@ -1,11 +1,11 @@
-# CyberJean.github.io 🛡️
+# CyberJean.github.io 
 
 A daily cybersecurity blog powered by an AI news agent, built to stay sharp, 
 stay informed, and show recruiters what I'm made of.
 
 ---
 
-## 🎯 About This Project
+##  About This Project
 
 CyberJean.github.io is a living portfolio and daily cybersecurity blog. Every 
 morning, an AI-powered agent automatically researches and publishes the top 
@@ -18,7 +18,7 @@ This isn't just a blog — it's proof of work.
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 1. **GitHub Actions** runs a scheduled workflow every day at midnight UTC
 2. The workflow calls the **Google Gemini AI API** to research and write a 
@@ -30,7 +30,7 @@ This isn't just a blog — it's proof of work.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -43,7 +43,7 @@ This isn't just a blog — it's proof of work.
 
 ---
 
-## 📚 What You'll Find Here
+##  What You'll Find Here
 
 - **Daily Threat Intel** — Top 3 cybersecurity stories every morning, with 
   impact analysis and mitigation strategies
@@ -56,14 +56,14 @@ This isn't just a blog — it's proof of work.
 
 ---
 
-## 👩‍💻 About Me
+##  About Me
 
 I'm Jean, an aspiring cybersecurity professional passionate about defense, 
 threat intelligence, and building things that solve real problems. This site 
 is my way of staying consistent, learning in public, and showing recruiters 
 not just what I know — but how I think and what I'm capable of building.
 
-📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/jean-berrios-marquez-2617a73b2) 
+ Connect with me on [LinkedIn](https://www.linkedin.com/in/jean-berrios-marquez-2617a73b2) 
 or reach out via [GitHub](https://github.com/CyberJean98).
 
 ---
