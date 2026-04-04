@@ -142,16 +142,52 @@ title: ""
 
 <div class="card">
   <div class="card-header">
-    <span class="card-title">Name Here</span>
+    <span class="card-title">Jeremy Anderson</span>
+    <span class="status-active">[mentor]</span>
   </div>
-  <p>What they helped you with or why you're grateful for them.</p>
+  <p>The pillar of my cybersecurity journey. Jeremy is the reason this path exists for me. From introducing me to hands-on learning and guiding me through building my first project — the Pwnagotchi — to meeting with me regularly to discuss my development and giving me real, honest career advice, he has been there every step of the way. His belief in me before I believed in myself made all the difference. Everything you see on this site traces back to him.</p>
+  <div class="card-tags">
+    <span class="tag">Mentor</span>
+    <span class="tag">Career Guidance</span>
+    <span class="tag">Pwnagotchi</span>
+    <span class="tag">Cybersecurity</span>
+  </div>
+  <div class="card-tags" style="margin-top: 8px;">
+    <a href="https://www.linkedin.com/in/jeremy-anderson-53963b222/" class="tag">LinkedIn</a>
+  </div>
 </div>
 
 <div class="card">
   <div class="card-header">
-    <span class="card-title">Name Here</span>
+    <span class="card-title">Christopher Charity</span>
+    <span class="status-active">[mentor]</span>
   </div>
-  <p>What they helped you with or why you're grateful for them.</p>
+  <p>Christopher has been a steady presence in my career development, meeting with me when he can to discuss my path and growth in cybersecurity. Most importantly, he connected me with the American Corporate Partners (ACP) program — setting me up with a full year of professional mentorship that has been invaluable in shaping my direction. His generosity with his time and network has opened doors I didn't know existed.</p>
+  <div class="card-tags">
+    <span class="tag">Mentor</span>
+    <span class="tag">Career Guidance</span>
+    <span class="tag">ACP</span>
+    <span class="tag">Networking</span>
+  </div>
+  <div class="card-tags" style="margin-top: 8px;">
+    <a href="https://www.linkedin.com/in/christopher-charity/" class="tag">LinkedIn</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <span class="card-title">Noah Sinai</span>
+    <span class="status-active">[ACP mentor]</span>
+  </div>
+  <p>Noah is my ACP (American Corporate Partners) mentor and a key player in the next chapter of this journey. We met for the first time today — introductions, shared goals, and already setting up a goal tracker to keep things moving in the right direction. With his background in Technology & Innovation and experience building tools used by thousands, I couldn't ask for a better guide as I work toward breaking into cybersecurity professionally. This mentorship is just getting started and I'm excited to see where it goes.</p>
+  <div class="card-tags">
+    <span class="tag">ACP Mentor</span>
+    <span class="tag">Technology</span>
+    <span class="tag">Career Development</span>
+    <span class="tag">Goal Setting</span>
+  </div>
+  <div class="card-tags" style="margin-top: 8px;">
+    <a href="https://www.linkedin.com/in/noahsinai/" class="tag">LinkedIn</a>
+  </div>
 </div>
 
 <div class="card">
