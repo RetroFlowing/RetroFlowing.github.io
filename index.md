@@ -88,22 +88,33 @@ title: ""
     <span class="status-done">[completed]</span>
   </div>
   <div class="cert-card">
+    <div class="cert-name">Datacom Cyber Ops</div>
+    <div class="cert-provider">Datacom / Forage</div>
+    <span class="status-done">[completed]</span>
+  </div>
+  <div class="cert-card">
+    <div class="cert-name">Deloitte Cyber</div>
+    <div class="cert-provider">Deloitte / Forage</div>
+    <span class="status-done">[completed]</span>
+  </div>
+  <div class="cert-card">
+    <div class="cert-name">Mastercard Cybersecurity</div>
+    <div class="cert-provider">Mastercard / Forage</div>
+    <span class="status-done">[completed]</span>
+  </div>
+  <div class="cert-card">
     <div class="cert-name">CompTIA Security+</div>
     <div class="cert-provider">CompTIA</div>
     <span class="status-building">[in progress]</span>
   </div>
   <div class="cert-card">
-    <div class="cert-name">TryHackMe SOC Level 1</div>
+    <div class="cert-name">TryHackMe SOC L1</div>
     <div class="cert-provider">TryHackMe</div>
     <span class="status-building">[in progress]</span>
   </div>
-  <div class="cert-card">
-    <div class="cert-name">CompTIA Network+</div>
-    <div class="cert-provider">CompTIA</div>
-    <span class="status-active">[planned]</span>
-  </div>
 </div>
 
+<a class="see-more" href="/certs/">View all certifications ></a>
 ---
 
 ## About Me
